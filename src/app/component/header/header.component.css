@@ -1,0 +1,228 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.my-header {
+    height: 10%;
+    width: 100%;
+}
+
+.sky {
+    background: rgb(0,153,255);
+    background: linear-gradient(180deg, rgba(0,153,255,1) 0%, rgba(0,153,255,1) 36%, rgba(0,212,255,1) 100%);
+    height: 36rem;
+    position: relative;
+}
+
+.wave {
+    background-image: url("src/app/images/wave.svg");
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 1;
+}
+    
+.main-header {
+    background-color: #0099ff;
+}
+
+.center {
+    position: absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%,-50%);
+}
+
+.plane {
+    height: 150px;
+    width: 300px;
+    background-size: cover;
+    position: absolute;
+    top: 10%;
+    left: 43%;
+}
+
+.center2 {
+    position: absolute;
+    top:60%;
+    left:75%;
+    transform: translate(-50%,-50%);
+}
+
+
+#cloud {
+    background: rgba(255, 255, 255);
+    width: 300px; 
+    height: 100px;
+    border-radius: 150px;	
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    animation: move 3s infinite;
+}
+  
+#cloud:after {
+content: '';
+background: rgba(255, 255, 255);
+position: absolute;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+top: -50px;
+left: 50px;
+}
+
+#cloud:before {
+content: '';
+background: rgba(255, 255, 255);
+position: absolute;
+width: 170px;
+height: 150px;
+border-radius: 50%;
+top: -90px;
+right: 40px;
+}
+  
+@keyframes move {
+    0% {
+        transform: translatex(0);
+    }
+    50% {
+        transform: translatex(-40px);
+    }
+}
+
+#cloud {
+    background: rgba(255, 255, 255);
+    width: 300px; 
+    height: 100px;
+    border-radius: 150px;	
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    animation: move 3s infinite;
+}
+  
+#cloud:after {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: 50px;
+}
+
+#cloud:before {
+    content: '';
+    background: rgba(255, 255, 255);
+    position: absolute;
+    width: 170px;
+    height: 150px;
+    border-radius: 50%;
+    top: -90px;
+    right: 40px;
+}
+
+.extra-green {
+    height: 20%;
+    width: 100%;
+    background-color: #00cba9;
+}
+
+h1,h2,p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.my-name {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.iam {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    display: block;
+}
+
+.first {
+    background-color: #0099ff;
+    border: 2px solid #025d9a;
+}
+
+.second {
+    background-color: #fbbf24;
+    border: 2px solid #9e7202;
+}
+
+.third {    
+    background-color: #22c55e;
+    border: 2px solid #018431;
+}
+
+/* .string {
+    margin-top: 3.5%;
+    animation: move 4s infinite;
+} */
+
+/* .titles {
+    overflow: hidden;
+} */
+
+.title-box {
+    height: 34px;
+    text-align: center;
+    background-color: #00cba9;
+    box-sizing: content-box;
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main-title-box {
+    overflow: hidden;
+    background-color: #00cba9;
+}
+
+span {
+    overflow-y: hidden;
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    animation: title-roller 3s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes title-roller {
+    0% {
+      transform: translateY(100%);
+      opacity: 1;
+      animation-delay: 0.5s;
+    }
+    33% {
+      transform: translatey(0%);
+      animation-delay: 0.5s;
+    }
+
+    66% {
+        transform: translatey(-100%);
+        animation-delay: 0.5s;
+    }
+
+    100% {
+        transform: translatey(-200%);
+        animation-delay: 0.5s;
+    }
+
+  }
