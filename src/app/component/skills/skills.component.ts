@@ -173,9 +173,9 @@ export class SkillsComponent implements OnInit,AfterViewInit {
     ctx.lineWidth = 5;
     ctx.strokeStyle = "#075985";
     ctx.moveTo(100, 83);
-    ctx.lineTo(80, 140);
+    ctx.lineTo(80, 142);
     ctx.lineTo(140, 195);
-    ctx.lineTo(175, 140);
+    ctx.lineTo(185, 140);
     ctx.lineTo(175, 90);
     ctx.closePath();
     ctx.fill();
